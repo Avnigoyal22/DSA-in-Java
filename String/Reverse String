@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args) {
+       String name = "Avni";
+        String newName="";
+        
+        //Method 1
+        
+//         for(int i=3;i>=0;i--){
+//             newName = newName + name.charAt(i);
+//         }
+
+//             System.out.print(newName);
+        
+        
+        //Method 2
+        
+        char a[] = name.toCharArray();
+        
+        for(int i=3;i>=0;i--){
+            newName = newName + a[i];
+        }
+        
+        System.out.print(newName);
+        
+    }
+}
