@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        
+        Scanner s = new Scanner(System.in);
+        System.out.print("Number of rows: ");
+        int row = s.nextInt();
+        
+        System.out.print("Number of columns: ");
+        int col = s.nextInt();
+        
+        int n[][] =  new int[row][col];
+        
+        for(int j=0;j<row;j++){
+            for(int k=0;k<col;k++){
+                n[j][k]= s.nextInt();
+            }
+        }
+        
+        for(int j=0;j<row;j++){
+            for(int k=0;k<col;k++){
+                System.out.print(n[j][k]+" ");
+            }
+            System.out.println();
+        }
+    }      
+}
