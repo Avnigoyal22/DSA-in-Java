@@ -15,13 +15,13 @@ public class Main
 		}
 		
 		System.out.println();
-		System.out.print("Elemet to search for is: ");
+		System.out.print("Element to search: ");
 		int x = s.nextInt();
 		
 		System.out.println();
 		for(int i=0;i<n;i++){
 		    if(a[i]==x){
-		        System.out.print("x is at index: "+i);
+		        System.out.print("x is found at index: "+i);
 		    }
 		}
 		
