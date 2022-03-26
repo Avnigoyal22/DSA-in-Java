@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        
+        Scanner s = new Scanner(System.in);
+        System.out.print("Number: ");
+        int n = s.nextInt();
+        
+        int num = n;
+        int dig = 0;
+        while(num>0){
+            num=num/10;
+            dig++;
+        }
+        
+        num=n;
+        
+        int sum = 0;
+        for(int i=0;i<dig;i++){
+            int a=num%10;
+            sum += Math.pow(a,dig);
+            num=num/10;
+        }
+        
+        if(sum==n){
+            System.out.print("n is an armstrong number.");
+        }
+        else{
+            System.out.print("n is not an armstrong number.");
+        }
+    }
+}
